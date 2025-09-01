@@ -1,8 +1,16 @@
-select * from employees;
+select * from products ;
 
-alter table employees add constraint chk_hourly_pay check(hourly_pay >=2);
+alter table products alter price set  default 0;
 
-INSERT INTO employees values(6,"ali","tset",90,'2002-1-3');
+insert into products(product_id,product_name) values
+(5,"starw"),(6,"napkin"),(7,"fork"),(8,"spoon");
 
-alter table employees drop check chk_hourly_pay;
+create table transacation(
+transacation_id int,
+amount decimal (5,2),
+transacation_date datetime default now()
+);
 
+select * from transacation;
+
+insert into transacation(transacation_id,amount) values(3,8.99);
