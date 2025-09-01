@@ -1,6 +1,8 @@
-alter table products modify price decimal (4,2) not null;
+select * from employees;
 
+alter table employees add constraint chk_hourly_pay check(hourly_pay >=2);
 
-select * from products ;
+INSERT INTO employees values(6,"ali","tset",90,'2002-1-3');
 
-insert into products values(10,'cookie',null);
+alter table employees drop check chk_hourly_pay;
+
