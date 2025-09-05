@@ -76,3 +76,18 @@ insert into transacations(amount,customer_id) values
 (3.38,3),
 (4.99,1);
 
+-- join
+select * from transacations;
+
+insert into transacations (amount,customer_id) values(
+1.00,null
+);
+
+select * from customers;
+
+insert into customers (first_name,last_name)values(
+"poppy","puff"
+);
+-- inner join
+select * from transacations inner join customers on transacations.customer_id =customers.customer_id;
+
