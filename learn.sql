@@ -109,3 +109,9 @@ select * from employees where first_name like "%a";
 
 -- 
 select * from employees;
+
+
+-- order by 
+
+select * from transacations order by amount,customer_id;
+select * from transacations order by amount;
