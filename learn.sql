@@ -91,3 +91,21 @@ insert into customers (first_name,last_name)values(
 -- inner join
 select * from transacations inner join customers on transacations.customer_id =customers.customer_id;
 
+-- function
+select sum(amount) as "sum" from transacations ;
+
+select * from transacations;
+
+select * from employees;
+
+select concat(first_name ," ", last_name) as "full name " from employees;
+
+-- wild cards
+
+-- _  THIS WILL RETURN ANY VALUE THAT START WITH A 
+select * from employees where first_name like "K%";
+-- this will return any value that will return a in the end
+select * from employees where first_name like "%a";
+
+-- 
+select * from employees;
