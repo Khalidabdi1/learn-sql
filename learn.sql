@@ -115,3 +115,9 @@ select * from employees;
 
 select * from transacations order by amount,customer_id;
 select * from transacations order by amount;
+
+
+-- union
+
+select first_name,last_name from employees union 
+select first_name,last_name from customers;
